@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'san-serif';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    background-color:black;
+    color: antiquewhite;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.character-container {
+    border: 2px solid #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.character-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.characters {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 250px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.characters:hover {
+    background-color: #444;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.character-name, .character-height, .character-gender {
+    margin-right: 30px;
+    font-size: 1rem;
+}
+
+.character-name {
+    font-size: 1rem;
+    cursor: pointer;
+    width: 140px;
+}
+
+.character-gender-bold {
+    font-weight: bolder;
+    font-size:15px;
+}
+
+.character-height-bold {
+    font-weight: bolder;
+    font-size:15px;
+}
+
+.character-hr {
+    margin: 7px 0;
+    margin-right: 25px;
+    width: 20%;
+    border: none;
+    border-top: 3px solid antiquewhite;
+    /* align-items: center; */
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.obi-wan-kenobi, .luke-skywalker, .darth-vader, .leia-organa, .r2-d2, .c-3po, .owen-lars, .r5-d4, .biggs-darklighter {
+    width: 180px;
+    height: 180px;
+}
+
+.beru-whitesun-lars {
+    width: 150px;
+    height: 165px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .characters {
+        flex: 1 1 45%;
+    }
+
+    .character-name, .character-height, .character-gender {
+        font-size: 0.9rem;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .characters {
+        flex: 1 1 100%;
+    }
+
+    .character-name, .character-height, .character-gender {
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+/* 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.character-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.character-item {
+    flex: 1 1 30%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.character-item:hover {
+    background-color: #ddd;
+}
+
+.character-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+} */
